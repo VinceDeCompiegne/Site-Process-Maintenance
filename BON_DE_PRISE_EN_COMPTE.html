@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="asset/css/index.css" rel="stylesheet">
+    <script	type="text/javascript" src="asset/js/fiche_bon.js" defer></script>    
+    <title>Document</title>
+</head>
+<body>
+<header>
+
+    <div id="header_logo"><a href="index.html"><img id="header_img_logo" src="asset/image/kisspng-laptop-computer-repair-technician-logo-clip-art-home-repair-logos.png" alt=""/></a></div>
+    <div id="header_client"><a href="FICHE_CLIENT.html">FICHE CLIENT</a></div>
+    <div id="header_bon"><a href="BON_DE_PRISE_EN_COMPTE.html">BON DE PRISE EN COMPTE</a></div>
+    <div id="header_devis"><a href="DEVIS.html">DEVIS</a></div>
+    <div id="header_facture"><a href="FACTURE.html">FACTURE</a></div>
+
+</header> 
+<main>
+    
+        <table>
+        <tr><td colspan="2"><h4 id="numBon">Bon N°</h4></td></tr>
+        <tr class="form-client">
+          <td><span>nom client: </span></td>
+          <td><span class="form_nom"></span></td>
+        </tr>
+        <tr class="form-client">
+            <td><span>prenom client: </span></td>
+            <td><span class="form_prenom"></span></td>
+          </tr>
+        <tr class="form-client">
+            <td><label for="materiel">materiel : </label></td>
+            <td><input type="email" name="materiel" class="form_materiel"  ></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="ref_mat">reference-materiel : </label></td>
+            <td><input type="text" name="ref_mat" class="form_ref_mat"  ></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="date">date de prise en compte : </label></td>
+            <td><span class="form_date"></span></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="accepter">accepté</label></td>
+            <td><input type="checkbox" class="form_accepter" name="accepter" value="accepter"></td>
+        </tr>
+        <tr class="form-client">
+            <td></td><td><button id="btn_enr" >Ok</td>
+        </tr>
+    </table>
+    <dialog id="favDialog">
+        <div id="dialog_div"></div>
+    </dialog>
+</main> 
+<footer>
+
+        <div>Copyright 2021</div>
+        <div id="msg_retour"></div>
+</footer>  
+</body>
+</html>

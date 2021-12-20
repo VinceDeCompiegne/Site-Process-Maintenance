@@ -1,0 +1,39 @@
+header {
+    background-color:beige;
+    display:flex;
+    justify-content: space-around; 
+    font-size:xx-large;
+    width:100%;
+}
+#header_client,#header_bon,#header_devis,#header_facture{
+    margin-top: 50px;
+} 
+
+#header_img_logo {
+    width:150px;
+    height:auto;
+}
+main{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+#main_logo{
+    width:50%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+footer{
+    background-color:beige;
+    width:99%;
+    height:50px;
+    position: absolute;
+    bottom: 0;
+    text-align:center;
+
+}
+
+footer div{
+    position:relative;
+}

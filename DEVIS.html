@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="asset/css/index.css" rel="stylesheet"> 
+    <script	type="text/javascript" src="asset/js/fiche_devis.js" defer></script>   
+    <title>Document</title>
+</head>
+<body>
+<header>
+
+    <div id="header_logo"><a href="index.html"><img id="header_img_logo" src="asset/image/kisspng-laptop-computer-repair-technician-logo-clip-art-home-repair-logos.png" alt=""/></a></div>
+    <div id="header_client"><a href="FICHE_CLIENT.html">FICHE CLIENT</a></div>
+    <div id="header_bon"><a href="BON_DE_PRISE_EN_COMPTE.html">BON DE PRISE EN COMPTE</a></div>
+    <div id="header_devis"><a href="DEVIS.html">DEVIS</a></div>
+    <div id="header_facture"><a href="FACTURE.html">FACTURE</a></div>
+
+</header> 
+<main>
+        <table>
+        <tr><td colspan="2"><h4 id="numDevis">Devis N°</h4></td></tr>
+        <tr class="form-client">
+          <td><span>nom client:</span></td>
+          <td><span class="form_nom"></span></td>
+        </tr>
+        <tr class="form-client">
+            <td><span>prenom client:</span></td>
+            <td><span class="form_prenom"></span></td>
+          </tr>
+        <tr class="form-client">
+            <td><span>materiel :</span></td>
+            <td><span class="form_materiel"></span></td>
+        </tr>
+        <tr class="form-client">
+            <td><span>reference-materiel :</span></td>
+            <td><span class="form_ref_mat"></span></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="description">description : </label></td>
+            <td><textarea rows="10" cols="55" class="form_description" name="description"></textarea></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="prix_devis">prix : </label></td>
+            <td><input type="number" name="prix_devis" class="form_prix" required><span>€</span></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="garantie">sous-garantie</label></td>
+            <td><input type="checkbox" class="form_garantie" name="garantie" value="garantie"></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="accepte">accepté</label></td>
+            <td><input type="checkbox" class="form_accepte" name="accepte" value="accepte"></td>
+        </tr>
+        <tr class="form-client">
+            <td><label for="date">date de prise en compte : </label></td>
+            <td><span class="form_date"></span></td>
+        </tr>
+        <tr class="form-client">
+            <td></td><td><button id="btn_enr" >Ok</td>
+        </tr>
+    </table>
+    <dialog id="favDialog">
+        <div id="dialog_div"></div>
+    </dialog>
+</main> 
+<footer>
+    
+        <div>Copyright 2021</div>
+        <div id="msg_retour"></div>
+</footer>  
+</body>
+</html>
