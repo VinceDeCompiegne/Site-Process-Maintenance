@@ -63,7 +63,7 @@ function enregistrer() {
             let str_json = "bon=" + (JSON.stringify(tab));
             console.log(str_json);
 
-            request.open("GET", "https//vincent-deramaux.hd.free.fr/Site-Process-Maintenance/asset/API/func.bon/func.enr.bon.php?" + str_json, true);
+            request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.bon/func.enr.bon.php?" + str_json, true);
             request.setRequestHeader("Content-type", "application/json");
             request.send();
             request.onreadystatechange = function () {
@@ -90,7 +90,7 @@ function lecture() {
 
     try {
 
-            request.open("GET", "/Site-Process-Maintenance/asset/API/func.bon/func.lect.bon.php?user=" + user_key.id, true);
+            request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.bon/func.lect.bon.php?user=" + user_key.id, true);
             request.setRequestHeader("Content-type", "application/json");
             request.send();
             request.onreadystatechange = function () {

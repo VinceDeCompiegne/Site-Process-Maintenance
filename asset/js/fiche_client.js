@@ -57,7 +57,7 @@ function enregistrer() {
         var str_json = "user=" + (JSON.stringify(tab));
         console.log(str_json);
 
-        request.open("GET", "/Site-Process-Maintenance/asset/API/func.client/func.enr.user.php?" + str_json, true);
+        request.open("GET", "https//vincent-deramaux.hd.free.fr/site/Site-Process-Maintenance/asset/API/func.client/func.enr.user.php?" + str_json, true);
         request.setRequestHeader("Content-type", "application/json");
         request.send();
         request.onreadystatechange = function () {
@@ -120,7 +120,7 @@ function update() {
             let str_json = "user=" + (JSON.stringify(tab));
             console.log(str_json);
 
-            request.open("GET", "/Site-Process-Maintenance/asset/API/func.bon/func.upd.user.php?" + str_json, true);
+            request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.bon/func.upd.user.php?" + str_json, true);
             request.setRequestHeader("Content-type", "application/json");
             request.send();
             request.onreadystatechange = function () {
@@ -147,7 +147,7 @@ function lecture() {
 
     try {
 
-        request.open("GET", "/Site-Process-Maintenance/asset/API/func.client/func.lect.user.php", true);
+        request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.client/func.lect.user.php", true);
         request.setRequestHeader("Content-type", "application/json");
         request.send();
         request.onreadystatechange = function () {

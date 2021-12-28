@@ -43,7 +43,7 @@ function lecture() {
 
     try {
 
-            request.open("GET", "/Site-Process-Maintenance/asset/API/func.fact/func.lect.facture.php?user=" + devis_key.id_devis, true);
+            request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.fact/func.lect.facture.php?user=" + devis_key.id_devis, true);
             request.setRequestHeader("Content-type", "application/json");
             request.send();
             request.onreadystatechange = function () {
@@ -107,7 +107,7 @@ function enregistrer() {
             let str_json = "facture=" + (JSON.stringify(tab));
             console.log(str_json);
 
-            request.open("GET", "/Site-Process-Maintenance/asset/API/func.fact/func.enr.facture.php?" + str_json, true);
+            request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.fact/func.enr.facture.php?" + str_json, true);
             request.setRequestHeader("Content-type", "application/json");
             request.send();
             request.onreadystatechange = function () {

@@ -26,7 +26,7 @@ function lecture() {
 
 try {
 
-        request.open("GET", "/Site-Process-Maintenance/asset/API/func.acceuil/func.lect.acceuil.php", true);
+        request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.acceuil/func.lect.acceuil.php", true);
         request.setRequestHeader("Content-type", "application/json");
         request.send();
         request.onreadystatechange = function () {
@@ -124,7 +124,7 @@ function payer(id) {
 
     try {
     
-            request.open("GET", "/Site-Process-Maintenance/asset/API/func.acceuil/func.payer.acceuil.php?facture=" + id, true);
+            request.open("GET", "/site/Site-Process-Maintenance/asset/API/func.acceuil/func.payer.acceuil.php?facture=" + id, true);
             request.setRequestHeader("Content-type", "application/json");
             request.send();
             request.onreadystatechange = function () {
